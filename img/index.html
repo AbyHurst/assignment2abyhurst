@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 2 Iconograpy - Aby Hurst</title>
+
+<script src="sound"></script>
+<Style> 
+    .row {
+        width: 720px;
+        margin: 10px auto 10px auto;
+    }
+    .imagecontainer {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 20px;
+    }
+
+</Style>
+</head>
+
+<body style="background-color: rgb(155, 163, 189);">
+<script>
+    var sound1 = new buzz.sound("sound/magicitem.mp3")
+
+    window.onload = function(){
+        document.getElementById('JournalUnc'),addEventListener('click', function () {sound1.play()})
+    }  
+</script>
+<div class='row'> 
+    <div class="imagecontainer"> <img id="JournalUnc" src="DreamJournalColourv3.png.png" onmouseover="JournalOpenColour.png.png" img></div>
+    <div class="imagecontainer"> <img id="DrawingPad" src="DrawingPadColour.png.png" onmouseover="DrawingPadColourClick.png.png" img></div>
+    <div class="imagecontainer"> <img id="Routine" src="RoutineColour.png.png" onmouseover="RoutineColourClick.png.png" img></div>
+</div>
+
+<div class="row">
+    <div class="imagecontainer"> <img id="Lightbulb" src="LightbulbColour.png.png" onmouseover="LightbulbColourClick.png.png"></div>
+    <div class="imagecontainer"> <img id="Analytics" src="AnalyticsColourv2.png.png" onmouseover="AnalyticsColourClickv2.png.png"></div>
+    <div class="imagecontainer"> <img id="Audiobook" src="Audiobookv4.png.png" onmouseover="Audiobookv3.png.png"></div>
+</div>
+
+<div class="row">
+    <div class="imagecontainer"> <img id="Lightbulb" src="LightbulbColour.png.png" onmouseover="LightbulbColourClick.png.png"></div>
+    <div class="imagecontainer"> <img id="Analytics" src="AnalyticsColourv2.png.png" onmouseover="AnalyticsColourClickv2.png.png"></div>
+    <div class="imagecontainer"> <img id="Audiobook" src="Audiobookv4.png.png" onmouseover="Audiobookv3.png.png"></div>
+</div>
+
+</body>
+</html>
