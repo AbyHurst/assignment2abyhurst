@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Assignment 2 - Aby Hurst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"> </script>
+    <style>
+            .row{
+                flex: 100%;
+                max-width: 50%;
+                padding: 20px;
+                margin: 20px auto 20px auto ;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .row img {
+                margin-top: 20px;
+                vertical-align: middle;
+            }
+           
+            body {
+                background-color: rgba(141, 117, 177, 0.881);
+            }
+
+            .{
+                box-sizing: border-box;
+            }
+            
+    </style>
+    </head>
+
+    <body>
+        <script>
+            var sound1 = new buzz.sound("sound/levelup.mp3")
+            var sound2 = new buzz.sound("sound/scribble.mp3")
+            var sound3 = new buzz.sound("sound/ding.mp3")
+            var sound4 = new buzz.sound("sound/lightswitch.wav")
+            var sound5 = new buzz.sound("sound/complete.wav")
+            var sound6 = new buzz.sound("sound/waterdrop.wav")
+            var sound7 = new buzz.sound("sound/clockbell.wav")
+            var sound8 = new buzz.sound("sound/happy.wav")
+            var sound9 = new buzz.sound("sound/shimmer.wav")
+
+            window.onload = function(){
+                document.getElementById('journal').addEventListener('click', function () {sound1.play();})
+                document.getElementById('draw').addEventListener('click', function (){sound2.play();})
+                document.getElementById('routine') .addEventListener('click', function (){sound3.play();})
+                document.getElementById('bulb').addEventListener('click', function () {sound4.play();})
+                document.getElementById('analytics').addEventListener('click', function (){sound5.play();})
+                document.getElementById('audiobook') .addEventListener('click', function (){sound6.play();})
+                document.getElementById('alarm').addEventListener('click', function () {sound7.play();})
+                document.getElementById('sun').addEventListener('click', function (){sound8.play();})
+                document.getElementById('lucid') .addEventListener('click', function (){sound9.play();})
+            };
+        </script>
+        <div class="image-container">
+            <div class="row">
+             <img id="journal" src="img/journal.png" onmousedown="this.src='img/journalclick.png';" onmouseout="this.src='img/journal.png';" width="33%"/>
+             <img id="draw" src="img/draw.png" onmouseover="this.src='img/drawclick.png';"  onmouseout="this.src='img/draw.png';" width="33%"/>
+             <img id="routine" src="img/routine.png" onmouseover="this.src='img/routineclick.png';" onmouseout="this.src='img/routine.png';" width="33%"/>
+    </div>
+        
+        <div class="row">
+            <img id="bulb" src="img/bulb.png" onmousedown="this.src='img/bulbclick.png';"  onmouseout="this.src='img/bulb.png';" width="33%"/>
+            <img id="analytics" src="img/analytics.png" onmouseover="this.src='img/analyticsclick.png';" onmouseout="this.src='img/analytics.png';" width="33%"/>
+            <img id="audiobook" src="img/audiobook.png" onmousedown="this.src='img/audiobookclick2.png';" onmouseout="this.src='img/audiobook.png';" width="33%"/>
+            </div>
+
+        <div class="row">
+            <img id="alarm" src="img/alarm.png" onmouseover="this.src='img/alarmclick.png';"  onmouseout="this.src='img/alarm.png';" width="33%"/>
+            <img id="sun" src="img/sun.png" onmousedown="this.src='img/sunclick.png';"  onmouseout="this.src='img/sun.png';" width="33%"/>
+            <img id="lucid" src="img/lucid.png" onmouseover="this.src='img/lucidclick.png';"  onmouseout="this.src='img/lucid.png';" width="33%"/>
+        </div>
+    </div>
+    </body>
+    
+</html>
